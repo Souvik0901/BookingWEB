@@ -4,7 +4,7 @@ import { countByCity, countByType, createHotel, deleteHotel, getHotel, getHotels
 import { verifyAdmin } from "../utils/verifyToken.js";
 const router = express.Router();
 
-//CREATE
+//CREATE hotel
 router.post("/", verifyAdmin,createHotel);
 
 //UPDATE
